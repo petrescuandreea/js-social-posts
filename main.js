@@ -25,7 +25,8 @@ numero di likes.
 
 // SELEZIONO GLI ELEMENTI UTILI 
 let posts = document.querySelector(".posts-list");
-
+let likesCta = document.querySelector(".likes__cta");
+let likesCounter = document.getElementById("like-counter-1");
 
 
 // ARRAY DI OGGETTI
@@ -120,3 +121,14 @@ for(let i = 0; i < postsList.length; i++) {
 }
 
 
+// FUNZIONE DI CALLBACK 
+likesCta.addEventListener("click" , 
+
+    function() {
+        likesCounter += 1;
+    }
+    
+
+);
+
+console.log(likesCounter);
